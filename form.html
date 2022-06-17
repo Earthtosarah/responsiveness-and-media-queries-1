@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="right">
+        <button class="btn">
+          <p>
+            Try it for free 7 days
+            <span style="font-weight: lighter">then $20/mo. thereafter</span>
+          </p>
+        </button>
+        <form action="" autocomplete="on">
+            <div class="form-control">
+                <input
+                type="text"
+                name="First-name"
+                id="first-name"
+                required
+                placeholder="First Name"
+            />
+            <img src="./images/icon-error.svg" alt="">
+            <small>error message</small>
+            </div>
+            <div class="form-control">
+                <input
+                type="text"
+                name="Last-name"
+                id="last-name"
+                required
+                placeholder="Last Name"
+                />
+                <img src="./images/icon-error.svg" alt="">
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <input
+                type="email"
+                name="email-address"
+                id="email"
+                required
+                placeholder="Email Address"/>
+                <img src="./images/icon-error.svg" alt="">
+                <small>error message</small>
+            </div>
+            <div class="form-control">     
+                <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                placeholder="Password"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number"
+                />
+                <img src="./images/icon-error.svg" alt="">
+                <small>error message</small>
+            </div>
+          <br />
+          <button class="submit" type="submit">CLAIM YOUR FREE TRIAL</button>
+          <p>
+            By clicking the button you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+</body>
+</html>
