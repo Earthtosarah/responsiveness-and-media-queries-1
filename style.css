@@ -10,43 +10,49 @@ body{
     background-color: rgba(255, 120, 120, 0.75);
     background-size: 1440px 650px;
     overflow-y: none;
-     overflow-x: none; 
+    overflow-x: none; 
+    
 }
 main{
   position: relative;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-size: auto;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 12%;
+  padding: 50px;
+  margin-left: 80px;
+  margin-top: 20px;
+  width: 100%;
 }
 .left{
-    width: 400px;
+    width: 45%;
     color:#ffffff;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin-right: -20px;
+    padding: 30px;
+    margin: 30px;
     cursor: default;
 }
 .left h1{
-    line-height: 32px;
+    line-height: 45px;
     font-weight: bold;
+    font-size: 40px;
     padding: 15px 0;
 }
 .left p{
-    font-size: 12px;
+    font-size: 14px;
 }
 .right{
-    width: 400px;
-    float: right;
+    width: 55%;
     justify-items: center;
-    padding: 50px;
-    margin: 0 100px;
+    padding: 30px;
+    margin: 0 50px 0 30px;
 }
 .right .btn{
-    width: 400px;
+    width: 80%;
     padding: 12px;
     margin: 10px 5px;
     background-color: hsl(248, 32%, 49%);
@@ -71,9 +77,9 @@ main{
 form{
     background-color: #ffffff;
     align-content: center;
-    padding: 35px 35px;
-    width: 400px;
-    height: 370px;
+    padding: 35px 30px;
+    width: 80%;
+    height: 350px;
    border-radius: 5px;
    margin: 5px;
    box-shadow: 0px 4px 4px #0000003b;
@@ -81,18 +87,18 @@ form{
 
 input{
     font-size: 10px;
-    padding: 10px 20px;
-    margin: 7px;
+    padding: 10px;
+    margin: 5px;
     font-weight: 500;
     border-radius: 5px;
-    width: 320px;
+    width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.3)
 }
 input:hover{
     border: 1px solid rgba(0,0,0,0.6);
 }
 .submit{
-    width: 320px;
+    width: 100%;
     padding: 12px;
     margin: 10px 5px;
     background-color:hsl(154, 59%, 51%) ;
