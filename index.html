@@ -7,6 +7,7 @@
     <title>Login page</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./images/favicon-32x32.png" />
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <main>
@@ -25,47 +26,78 @@
             <span style="font-weight: lighter">then $20/mo. thereafter</span>
           </p>
         </button>
-        <form action="" autocomplete="on">
-          <input
-            type="text"
-            name="First-name"
-            id="first-name"
-            required
-            placeholder="First Name"
-          />
-          <br />
-          <input
-            type="text"
-            name="Last-name"
-            id="last-name"
-            required
-            placeholder="Last Name"
-          />
-          <br />
-          <input
-            type="email"
-            name="email-address"
-            id="email"
-            required
-            placeholder="Email Address"
-          />
-          <br />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            required
-            placeholder="Password"
-            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
-            title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number"
-          />
-          <br />
-          <button class="submit" type="submit">CLAIM YOUR FREE TRIAL</button>
+        <div id="form" class="form">
+          <div class="form-control" id="ft">
+            <input
+              type="text"
+              name="First-name"
+              id="first-name"
+              placeholder="First Name"
+            />
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <small>First Name cannot be empty</small>
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              name="Last-name"
+              id="last-name"
+              placeholder="Last Name"
+            />
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <small>Last Name cannot be empty</small>
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              class="email"
+              name="email-address"
+              id="email"
+              placeholder="Email Address"
+            />
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <small>Looks like this is not an email</small>
+          </div>
+          <div class="form-control" id="ft">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle fill="#FF7979" cx="12" cy="12" r="12" />
+                <rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" />
+                <rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
+              </g>
+            </svg>
+            <small>Password cannot be empty</small>
+          </div>
+          <div class="form-control"><button class="submit" onclick="setErr();" type="submit">CLAIM YOUR FREE TRIAL</button></div>
           <p>
             By clicking the button you are agreeing to our
             <a href="#">Terms and Services</a>
           </p>
-        </form>
+        </div>
       </div>
     </main>
   </body>
