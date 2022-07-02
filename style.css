@@ -1,59 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-image: url(./images/bg-intro-desktop.png);
-    background-color: rgba(255, 120, 120, 0.75);
+    background-color: rgba(255, 120, 120, 0.8);
     background-size: 1440px 650px;
     overflow-y: none;
-    overflow-x: none; 
-    
+    overflow-x: none;
+
 }
-main{
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-size: auto;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 50px;
-  margin-left: 80px;
-  margin-top: 20px;
-  width: 100%;
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-size: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 50px;
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 100%;
 }
-.left{
+
+.left {
     width: 45%;
-    color:#ffffff;
+    color: #ffffff;
     justify-content: center;
     align-items: center;
     padding: 30px;
     margin: 30px;
     cursor: default;
 }
-.left h1{
+
+.left h1 {
     line-height: 40px;
     font-weight: bolder;
     font-size: 40px;
     padding: 15px 0;
 }
-.left h6{
+
+.left h6 {
     font-size: 15px;
     font-weight: lighter;
     padding: 5px 10px 5px 0px;
 }
-.right{
+
+.right {
     width: 55%;
     justify-items: center;
     padding: 30px;
     margin: 0 50px 0 30px;
 }
-.right .btn{
+
+.right .btn {
     width: 80%;
     padding: 12px;
     margin: 10px 5px;
@@ -61,22 +69,26 @@ main{
     border: transparent;
     border-radius: 5px;
     box-shadow: 0px 4px 4px #0000003b;
-    cursor: pointer; 
+    cursor: pointer;
 }
-.right .btn:hover{
+
+.right .btn:hover {
     box-shadow: 0 0 8px 2px rgba(1, 1, 1, 0.432);
 }
-.right .btn p{
+
+.right .btn p {
     color: white;
     font-weight: bold;
     font-size: 11px;
 }
-.right .btn span{
+
+.right .btn span {
     font-size: 11px;
     color: rgba(255, 255, 255, 0.859);
     font-weight: 100px;
 }
-.form{
+
+.form {
     background-color: #ffffff;
     align-content: center;
     padding: 35px 30px;
@@ -86,31 +98,40 @@ main{
     margin: 5px;
     box-shadow: 0px 4px 7px #00000055;
 }
-.form-control{
+
+.form-control {
     padding-bottom: 0.5em;
     position: relative;
 }
-.form-control.error input{
+
+.form-control.error input {
     border-color: #f16262;
+    border-width: 1.7px;
 }
-.form-control.success input{
-    border-color:hsl(154, 59%, 51%);
+
+.form-control.success input {
+    border-color: hsl(154, 59%, 51%);
+    border-width: 1.7px;
 }
-.form-control.error svg{
+
+.form-control.error svg {
     visibility: visible;
     position: absolute;
     right: 1.5%;
     transform: translateY(-140%)
 }
-.form-control.error small{
+
+.form-control.error small {
     visibility: visible;
 }
-.emailError::placeholder{
+
+.emailError::placeholder {
     color: #f16262;
     font-weight: 600;
     font-size: 0.75rem;
 }
-input{
+
+input {
     font-size: 10.8px;
     padding: 10px;
     margin: 5px;
@@ -120,8 +141,9 @@ input{
     display: block;
     border: 1px solid rgba(0, 0, 0, 0.3)
 }
-small{
-    color:#FF7979;
+
+small {
+    color: #FF7979;
     font-style: italic;
     font-weight: 600;
     font-size: 0.7rem;
@@ -129,60 +151,71 @@ small{
     visibility: hidden;
     padding-bottom: 0.5em;
 }
-.form-control svg{
+
+.form-control svg {
     position: absolute;
     right: 2%;
     visibility: hidden;
     transform: translateY(-150%)
 }
-input:hover{
+
+input:hover {
     box-shadow: 0 0 2px hsl(246, 24%, 74%);
 }
-input:focus { 
+
+input:focus {
     outline: none !important;
     border-color: hsl(246, 25%, 77%);
     box-shadow: 0 0 2px hsl(246, 24%, 74%);
- }
-.submit{
+}
+
+.submit {
     width: 100%;
     padding: 12px;
     margin: 10px 5px;
-    background-color:hsl(154, 59%, 51%) ;
+    background-color: hsl(154, 59%, 51%);
     border: transparent;
     border-radius: 5px;
     font-weight: bolder;
     font-size: 10px;
+    box-shadow: 0 3px 3px #0000003b, 0 3px 1px hsla(154, 59%, 51%, 0.931);
     color: #ffffff;
     cursor: pointer;
 }
-.submit:hover{
-    box-shadow: 0 0 8px 2px rgba(1, 1, 1, 0.432);
+
+.submit:hover {
+    opacity: 0.8
 }
-.right p{
+
+.right p {
     font-size: 9px;
     text-align: center;
     color: hsl(246, 25%, 77%);
     cursor: default;
 }
-.right p a{
+
+.right p a {
     text-decoration: none;
     font-weight: bold;
-    color:hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
 }
-@media screen and (max-width: 800px){
-    *{
+
+@media screen and (max-width: 800px) {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }
-    body{
+
+    body {
         background-image: url(./images/bg-intro-mobile.png);
         background-size: 375px;
         background-color: rgba(255, 120, 120, 0.655);
-                 
+
     }
-    main{
+
+    main {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -194,16 +227,18 @@ input:focus {
         width: 100%;
 
     }
-    .left{
+
+    .left {
         width: 100%;
-        color:#ffffff;
+        color: #ffffff;
         justify-content: center;
         align-items: center;
         padding: 10px;
         cursor: default;
         margin: 10px 10px 0px 10px;
     }
-    .left h1{
+
+    .left h1 {
         line-height: 30px;
         font-weight: bold;
         font-size: 30px;
@@ -211,7 +246,8 @@ input:focus {
         text-align: center;
         width: 95%;
     }
-    .left h6{
+
+    .left h6 {
         font-size: 16px;
         text-align: center;
         line-height: 25px;
@@ -219,14 +255,16 @@ input:focus {
         width: 95%;
         font-weight: light;
     }
-    .right{
+
+    .right {
         width: 100%;
         justify-items: center;
         align-items: center;
         padding: 15px;
         margin: 10px 10px 0px 10px;
     }
-    .right .btn{
+
+    .right .btn {
         width: 90%;
         padding: 15px 20px;
         align-items: center;
@@ -235,29 +273,34 @@ input:focus {
         border: transparent;
         border-radius: 5px;
         box-shadow: 0px 5px 4px #0000003b;
-        cursor: pointer; 
+        cursor: pointer;
     }
-    .right .btn p{
+
+    .right .btn p {
         color: white;
         font-weight: bold;
         font-size: 15px;
     }
-    .right .btn span{
+
+    .right .btn span {
         font-size: 15px;
         color: rgba(255, 255, 255, 0.859);
         font-weight: 100px;
     }
-    .form{
+
+    .form {
         background-color: #ffffff;
         align-content: center;
         padding: 20px;
         width: 90%;
         height: auto;
         border-radius: 7px;
-        margin: 10px;;
+        margin: 10px;
+        ;
         box-shadow: 0px 4px 4px #0000003b;
     }
-    input{
+
+    input {
         font-size: 13px;
         padding: 14px;
         margin: 5px 5px 5px 5px;
@@ -266,17 +309,19 @@ input:focus {
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.3)
     }
-    .form-control.error svg{
+
+    .form-control.error svg {
         visibility: visible;
         position: absolute;
         right: 1.5%;
         transform: translateY(-160%)
     }
-    .submit{
+
+    .submit {
         width: 100%;
         padding: 15px;
         margin: 10px 0;
-        background-color:hsl(154, 59%, 51%) ;
+        background-color: hsl(154, 59%, 51%);
         border: transparent;
         border-radius: 5px;
         font-weight: lighter;
@@ -285,32 +330,37 @@ input:focus {
         color: #ffffff;
         cursor: pointer;
     }
-    .submit:hover{
-        letter-spacing: 0.5px;
+
+    .submit:hover {
         box-shadow: none;
+        opacity: 0.8;
     }
 }
-.right p{
+
+.right p {
     font-size: 11px;
     text-align: center;
     color: hsl(246, 25%, 77%);
     cursor: default;
     padding: 0 5px;
 }
-@media screen and (max-width: 375px){
-    *{
+
+@media screen and (max-width: 375px) {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }
-    body{
+
+    body {
         background-image: url(./images/bg-intro-mobile.png);
         background-size: 375px;
         background-color: rgba(255, 120, 120, 0.655);
-                 
+
     }
-    main{
+
+    main {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -322,16 +372,18 @@ input:focus {
         width: 100%;
 
     }
-    .left{
+
+    .left {
         width: 100%;
-        color:#ffffff;
+        color: #ffffff;
         justify-content: center;
         align-items: center;
         padding: 10px;
         cursor: default;
         margin: 10px 10px 0px 10px;
     }
-    .left h1{
+
+    .left h1 {
         line-height: 30px;
         font-weight: bold;
         font-size: 30px;
@@ -339,7 +391,8 @@ input:focus {
         text-align: center;
         width: 95%;
     }
-    .left h6{
+
+    .left h6 {
         font-size: 16px;
         text-align: center;
         line-height: 25px;
@@ -347,14 +400,16 @@ input:focus {
         width: 95%;
         font-weight: light;
     }
-    .right{
+
+    .right {
         width: 100%;
         justify-items: center;
         align-items: center;
         padding: 15px;
         margin: 10px 10px 0px 10px;
     }
-    .right .btn{
+
+    .right .btn {
         width: 90%;
         padding: 15px 20px;
         align-items: center;
@@ -363,29 +418,34 @@ input:focus {
         border: transparent;
         border-radius: 5px;
         box-shadow: 0px 5px 4px #0000003b;
-        cursor: pointer; 
+        cursor: pointer;
     }
-    .right .btn p{
+
+    .right .btn p {
         color: white;
         font-weight: bold;
         font-size: 15px;
     }
-    .right .btn span{
+
+    .right .btn span {
         font-size: 15px;
         color: rgba(255, 255, 255, 0.859);
         font-weight: 100px;
     }
-    .form{
+
+    .form {
         background-color: #ffffff;
         align-content: center;
         padding: 20px;
         width: 90%;
         height: auto;
         border-radius: 7px;
-        margin: 10px;;
+        margin: 10px;
+        ;
         box-shadow: 0px 4px 4px #0000003b;
     }
-    input{
+
+    input {
         font-size: 13px;
         padding: 14px;
         margin: 5px 5px 5px 5px;
@@ -394,17 +454,19 @@ input:focus {
         width: 100%;
         border: 1px solid rgba(0, 0, 0, 0.3)
     }
-    .form-control.error svg{
+
+    .form-control.error svg {
         visibility: visible;
         position: absolute;
         right: 1.5%;
         transform: translateY(-160%)
     }
-    .submit{
+
+    .submit {
         width: 100%;
         padding: 15px;
         margin: 10px 0;
-        background-color:hsl(154, 59%, 51%) ;
+        background-color: hsl(154, 59%, 51%);
         border: transparent;
         border-radius: 5px;
         font-weight: lighter;
@@ -413,12 +475,14 @@ input:focus {
         color: #ffffff;
         cursor: pointer;
     }
-    .submit:hover{
-        letter-spacing: 0.5px;
+
+    .submit:hover {
+        opacity: 0.8;
         box-shadow: none;
     }
 }
-.right p{
+
+.right p {
     font-size: 11px;
     text-align: center;
     color: hsl(246, 25%, 77%);

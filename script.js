@@ -54,6 +54,9 @@ form.addEventListener("submit", (e) => {
 //   const formControl = input.parentElement; 
 //   formControl.className = "form-control success";
 // }
+var email = document.form.email.value;
+var atPosition=email.IndexOf("@");
+var dotPosition=email.lastIndexOf(".")
 
 function setErr() {
   const firstName = document.getElementById("first-name");
@@ -76,8 +79,7 @@ function setErr() {
     lastName.parentElement.classList.remove("error");
     lastName.parentElement.classList.add("success");
   }
-
-  if (email.value == "" || email.value.i) {
+  if (email.value == "" || atPosition<1 || dotPosition<atPosition+2 || dotPosition+2>email.length) {
     email.placeholder = "email@example/com";
     email.classList.add("emailError");
     email.parentElement.classList.add("error");
