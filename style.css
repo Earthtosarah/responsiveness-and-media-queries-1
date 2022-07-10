@@ -118,7 +118,7 @@ main {
     visibility: visible;
     position: absolute;
     right: 1.5%;
-    transform: translateY(-140%)
+    transform: translateY(-153%)
 }
 
 .form-control.error small {
@@ -200,7 +200,7 @@ input:focus {
     color: hsl(0, 100%, 74%);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     * {
         margin: 0;
         padding: 0;
@@ -479,6 +479,12 @@ input:focus {
     .submit:hover {
         opacity: 0.8;
         box-shadow: none;
+    }
+    .form-control.error svg {
+        visibility: visible;
+        position: absolute;
+        right: 1.5%;
+        transform: translateY(-170%)
     }
 }
 
